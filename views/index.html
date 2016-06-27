@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='myApp' >
   <head>
     <meta charset="utf-8">
     <title>mean stack review</title>
@@ -8,6 +8,13 @@
 
   </head>
   <body>
-    <h1> hey dude </h1>
+   <h1> hey dude </h1>
+    <div ng-controller="mondayController" >
+      <button type ng-click='whatAreWeTryingToDo()'> Button </button>
+      <!--  this model is available as $scope.MODELNAME in all controllers (we think)-->
+      <input type="text" ng-model="notATestArea" name="name" value="" placeholder="two way testing">
+        {{ notATestArea }}
+
+  </div>
   </body>
 </html>
